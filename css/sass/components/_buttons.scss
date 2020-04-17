@@ -1,0 +1,18 @@
+.main-button
+{
+    background-color: rgba($maincolor,0.7);
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    @include prefixer(transition,all 2s ease,webkit moz o);
+    &:hover
+    {
+        background-color: $maincolor;
+    }
+}

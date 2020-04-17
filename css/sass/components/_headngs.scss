@@ -1,0 +1,31 @@
+.heading-with-border
+{
+  position: relative;
+    
+    h2
+    {
+        background-color: $maincolor;
+        color:#fff;
+        max-width: 400px;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        border-radius: 15px;
+        text-align: center;
+        margin:30px auto;
+        font-size:30px;
+        font-family: cursive;
+        &:before
+        {
+            content: '';
+            width: 100%;
+            background-color: $textcolor;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index:-1;
+                
+        }
+            
+    }
+}
